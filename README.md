@@ -13,8 +13,7 @@ Casamento/
 ├── index.html          # Página principal do site
 ├── script.js           # Lógica do frontend
 ├── style.css           # Estilo da página
-├── imagens/            # Imagens utilizadas no site
-└── backend-casamento/
+├── backend-casamento/
     ├── server.js       # Servidor Node.js
     ├── convidados      # Dados dos convidados
     ├── package.json
