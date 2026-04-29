@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>Noivo & Noiva</h1>
+      <p>DD/MM/AAAA 💍</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>⏳ Faltam:</h2>
+    <div class="contador-box">
+      <div><span id="dias">0</span><p>Dias</p></div>
+      <div><span id="horas">0</span><p>Horas</p></div>
+      <div><span id="minutos">0</span><p>Min</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>📍 Local</h2>
+    <p>Nome do local - Endereço</p>
+  </section>
+
+  <section class="card">
+    <h2>📖 Nossa História</h2>
+    <p>...</p>
+  </section>
+
+  <section class="card">
+    <h2>📸 Momentos</h2>
+    <div class="galeria">
+      <img src="" onclick="abrirModal(this)">
+      <img src="" onclick="abrirModal(this)">
+      <img src="" onclick="abrirModal(this)">
+    </div>
+  </section>
+
+  <div id="modal" class="modal" onclick="fecharModal()">
+    <span class="fechar">&times;</span>
+    <img class="modal-conteudo" id="imgModal">
+  </div>
+
+  <section class="card">
+    <h2>✅ Confirme sua presença</h2>
+    <input type="text" id="nomePrincipal" placeholder="Seu nome">
+    <h3>Acompanhantes</h3>
+    <div id="listaAcompanhantes"></div>
+    <button onclick="adicionarPessoa()">+ Adicionar pessoa</button>
+    <br><br>
+    <button onclick="confirmar()">Confirmar presença</button>
+    <p id="mensagem"></p>
+  </section>
+
+  <section class="card">
+    <h2>💝 Lista de Presentes</h2>
+    <p>Se quiser nos presentear, preparamos uma lista especial 💖</p>
+    <a href="#" target="_blank">
+      <button>Ver lista</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>Feito com ❤️ para nosso grande dia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
